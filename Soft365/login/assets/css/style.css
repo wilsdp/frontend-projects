@@ -1,0 +1,345 @@
+* {
+   /* outline: 1px solid red; */
+   margin: 0;
+   padding: 0 red;
+   box-sizing: border-box;
+   font-family: "Noto Sans KR", sans-serif;
+}
+
+/* LOGIN PAGE START */
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto:wght@300&display=swap");
+:root {
+   --primary-color: #ffffff;
+   --text-color: #444444;
+   --icons-color: #484848;
+   --placeholder-color: #a3acb8;
+   --logbutton-color: #f69140;
+   --hr-color: #d1d8dc;
+
+   --primary-font: "Noto Sans KR", sans-serif;
+   --secondary-font: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+   background: url("../img/bg/bg.png");
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   padding: 0 20px;
+}
+
+/* Card Container */
+.container {
+   border-radius: 30px;
+   overflow: hidden;
+   position: relative;
+   background: none;
+   margin: auto;
+}
+
+.vertical-line {
+   position: absolute;
+   right: 50%;
+   margin: auto;
+   width: 1px;
+   height: 292px;
+   background-color: var(--placeholder-color);
+   border: none;
+   padding: 1px;
+}
+
+/* Left Column */
+.col-1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 55%;
+   border-radius: 0 30% 20% 0;
+   transition: border-radius 0.3s;
+}
+
+.logo-left {
+   position: relative;
+   width: 500px;
+   height: 500px;
+}
+
+/* Right Column */
+.col-2 {
+   position: relative;
+   width: 55%;
+   padding: 20px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+
+.logo-right {
+   margin-top: 10px;
+   width: 44px;
+   height: 44px;
+}
+
+/* Login Form */
+.login-form {
+   width: 350px;
+   padding: 0 4vw;
+   margin: auto;
+}
+
+.login-form,
+.form-inputs {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Form Header Start */
+.form-title-1 {
+   margin: 20px;
+   margin-top: 40px;
+   color: var(--text-color);
+   font-size: 12px;
+   font-weight: 100%;
+   width: 350px;
+   position: relative;
+}
+
+.hr-left,
+.hr-right {
+   flex: 1;
+   border-bottom: 1px solid var(--hr-color);
+   margin: 0 10px;
+}
+
+.form-title-2 {
+   margin-top: 20px;
+   margin-bottom: 10px;
+   color: var(--text-color);
+   font-size: 12px;
+   font-weight: 100%;
+   display: flex;
+   align-items: center;
+   width: 345px;
+   position: relative;
+}
+
+.hr-left1,
+.hr-right2 {
+   flex: 1;
+   border-bottom: 1px solid var(--hr-color);
+   margin: 0 10px;
+}
+
+.hr-center {
+   border-bottom: 1px solid var(--hr-color);
+   width: 100%;
+   position: relative;
+   margin: 0 19px;
+}
+
+.center-line {
+   color: var(--text-color);
+   font-size: 12px;
+   font-weight: 100%;
+   display: flex;
+   align-items: center;
+   width: 350px;
+   position: relative;
+   margin-top: 12px;
+}
+/* Form Header End */
+
+/* Form Inputs Start */
+.form-inputs {
+   width: 100%;
+}
+
+.input-box {
+   width: 342px;
+   position: relative;
+}
+
+.input-field {
+   width: 100%;
+   height: 54px;
+   padding-left: 40px;
+   margin: 10px 0;
+   color: var(--text-color);
+   background: var(--primary-color);
+   border: none;
+   border-radius: 9px;
+   outline: none;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.2);
+}
+
+.input-field-2 {
+   width: 100%;
+   height: 54px;
+   padding-left: 20px;
+   margin: 10px 0;
+   color: var(--text-color);
+   background: var(--primary-color);
+   border: none;
+   border-radius: 9px;
+   outline: none;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.2);
+}
+::placeholder {
+   color: var(--placeholder-color);
+   font-size: 12px;
+   width: 100%;
+}
+
+.input-box .icon {
+   position: absolute;
+   top: 52%;
+   left: 15px;
+   transform: translateY(-50%);
+   color: var(--icons-color);
+}
+
+.input-group {
+   width: 335px;
+   position: relative;
+}
+.remember-me {
+   display: block;
+   justify-content: right;
+   text-align: left;
+   width: 20%;
+   margin-top: 5px;
+   padding-right: 5px;
+}
+
+.input-group {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+}
+.form-check {
+   text-decoration: none;
+   font-size: 12px;
+}
+
+.form-check-input {
+   appearance: none;
+   color: #000;
+}
+
+.form-check-input:checked {
+   background-color: #000;
+   border-color: #000;
+}
+
+.form-check-input:focus {
+   box-shadow: none;
+}
+
+.form-check-input:focus {
+   outline: none;
+}
+
+.form-check small {
+   color: var(--text-color);
+}
+.forgot {
+   font-size: 12px;
+}
+.forgot a {
+   text-decoration: none;
+   color: var(--text-color);
+}
+
+.button-box {
+   width: 145px;
+   height: 36px;
+   background-color: var(--logbutton-color);
+   border-radius: 4px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.button-box:hover {
+   transform: scale(0.9);
+}
+
+.input-submit {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+   width: 100%;
+   height: 100%;
+   padding: 0 5px;
+   color: var(--primary-color);
+   background-color: var(--logbutton-color);
+   border-radius: 4px;
+   border: none;
+   font-size: 14px;
+}
+/* Form Inputs End */
+
+/* Social Icons Start */
+.social-login {
+   gap: 25px;
+   margin-top: 27px;
+   padding: 5px;
+   height: 50px;
+   width: 200px;
+}
+
+.social-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 34px;
+   width: 34px;
+   margin-top: 13px;
+   cursor: pointer;
+   transition: 0.2s;
+   margin-right: 3px;
+}
+.social-icon:hover {
+   transform: scale(0.9);
+}
+
+.icon-txt {
+   margin-top: 5px;
+   width: 100px;
+   text-decoration: none;
+   color: var(--text-color);
+   font-size: 9px;
+}
+
+.icon-txt a {
+   cursor: default;
+   color: var(--text-color);
+}
+
+/* Responsive */
+@media (max-width: 892px) {
+   .container {
+      /* width: 400px; */
+      display: block;
+   }
+   .col-1 {
+      padding: 20px 4vw;
+      display: none;
+   }
+   .col-2 {
+      width: 100%;
+      padding: 20px 4vw;
+      /* display: block; */
+   }
+}
+/* LOGIN PAGE END */
